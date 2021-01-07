@@ -30,9 +30,6 @@ export class Form {
   @Column()
   placeholder: string;
 
-  @Column({
-    type: 'simple-array',
-    nullable: true,
-  })
+  @Column('simple-array')
   sources: string[];
 }
